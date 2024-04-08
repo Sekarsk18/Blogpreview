@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", serif;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    max-width: 350px;
+    background-color: var(--White);
+    color: var(--Black);
+    padding: 1rem;
+    border-radius: 15px;
+    outline: 1px solid black;
+    box-shadow: 8px 8px black;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 12px 12px black;
+}
+
+.card-img {
+    width: 100%;
+    margin-bottom: .8rem;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-content .title {
+    font-size: .7rem;
+    font-weight: bolder;
+    background-color: var(--Yellow);
+    padding: .3rem;
+    border-radius: 4px;
+}
+
+.card-content .publish {
+    margin-block: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card-content .heading {
+    font-size: 1.35rem;
+    font-weight: 900;
+    margin-block: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.heading:hover {
+    color: var(--Yellow);
+}
+
+.card-content .desc {
+    color: var(--Grey);
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+.review-author {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.review-author img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.review-author .author {
+    font-size: .8rem;
+    font-weight: 1000;
+    margin-left: .75rem;
+}
